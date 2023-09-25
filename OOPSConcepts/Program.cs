@@ -18,7 +18,8 @@ namespace OOPSConcepts
                 Console.WriteLine("2. Inheritance Example.");
                 Console.WriteLine("3a. Polymorphism Overrides");
                 Console.WriteLine("3b. Polymorphism Overloading");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Encapsulation Concepts");
+                Console.WriteLine("5. Exit");
                 string choice = Console.ReadLine();
                 
                 switch (choice)
@@ -46,6 +47,12 @@ namespace OOPSConcepts
                         pol.Login("Rakesh", "1234");
                         break;
                     case "4":
+                        EncapsulationConcepts encapsulationConcepts = new EncapsulationConcepts();
+                        encapsulationConcepts.Name = "Rakesh";
+                        encapsulationConcepts.Description = "This is Description.";
+                        encapsulationConcepts.DisplayDetails();
+                        break;
+                    case "5":
                         isRunning = false;
                         break;
                 }
