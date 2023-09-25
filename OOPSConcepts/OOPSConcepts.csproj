@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="EncapsulationConcepts.cs" />
     <Compile Include="ObjectClassConcepts.cs" />
     <Compile Include="PolymorphismOverloading.cs" />
     <Compile Include="PolymorphismOverride.cs" />
