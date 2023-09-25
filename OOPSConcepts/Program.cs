@@ -16,7 +16,9 @@ namespace OOPSConcepts
                 Console.WriteLine("Which Program You want to run : ");
                 Console.WriteLine("1. Object-Class-Concepts.");
                 Console.WriteLine("2. Inheritance Example.");
-                Console.WriteLine("3. Exit");
+                Console.WriteLine("3a. Polymorphism Overrides");
+                Console.WriteLine("3b. Polymorphism Overloading");
+                Console.WriteLine("4. Exit");
                 string choice = Console.ReadLine();
                 
                 switch (choice)
@@ -32,7 +34,18 @@ namespace OOPSConcepts
                         dog.Eat();
                         dog.Bark();
                         break;
-                    case "3":
+                    case "3a":
+                        PolymorphismOverride polymorphismOverride1 = new Circle();
+                        PolymorphismOverride polymorphismOverride2 = new Square();
+                        polymorphismOverride1.Draw();
+                        polymorphismOverride2.Draw();
+                        break;
+                    case "3b":
+                        PolymorphismOverloading pol = new PolymorphismOverloading();
+                        pol.Login(7988975494L);
+                        pol.Login("Rakesh", "1234");
+                        break;
+                    case "4":
                         isRunning = false;
                         break;
                 }
