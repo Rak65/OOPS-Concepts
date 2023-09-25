@@ -20,7 +20,8 @@ namespace OOPSConcepts
                 Console.WriteLine("3b. Polymorphism Overloading.");
                 Console.WriteLine("4. Encapsulation Concepts.");
                 Console.WriteLine("5. Abstraction Concepts.");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("6. Variable Types.");
+                Console.WriteLine("7. Exit");
                 string choice = Console.ReadLine();
                 
                 switch (choice)
@@ -60,6 +61,9 @@ namespace OOPSConcepts
                         rectangle.Draw();
                         break;
                     case "6":
+                        VariableTypes.Variable();
+                        break;
+                    case "7":
                         isRunning = false;
                         break;
                 }
