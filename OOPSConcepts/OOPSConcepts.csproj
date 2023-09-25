@@ -46,6 +46,7 @@
     <Compile Include="AbstractionConcepts.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="EncapsulationConcepts.cs" />
+    <Compile Include="MethodTypes.cs" />
     <Compile Include="ObjectClassConcepts.cs" />
     <Compile Include="PolymorphismOverloading.cs" />
     <Compile Include="PolymorphismOverride.cs" />

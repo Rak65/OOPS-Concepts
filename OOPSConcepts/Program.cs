@@ -21,7 +21,8 @@ namespace OOPSConcepts
                 Console.WriteLine("4. Encapsulation Concepts.");
                 Console.WriteLine("5. Abstraction Concepts.");
                 Console.WriteLine("6. Variable Types.");
-                Console.WriteLine("7. Exit");
+                Console.WriteLine("7. Method Types.");
+                Console.WriteLine("8. Exit");
                 string choice = Console.ReadLine();
                 
                 switch (choice)
@@ -64,6 +65,14 @@ namespace OOPSConcepts
                         VariableTypes.Variable();
                         break;
                     case "7":
+                        MethodTypes methodTypes = new MethodTypes();
+                        methodTypes.Calculator();
+                        Console.WriteLine(methodTypes.Add(5, 6));
+                        MethodTypes.Method();
+                        Console.WriteLine(MethodTypes.Multiply(5, 6));
+                        break;
+
+                    case "8":
                         isRunning = false;
                         break;
                 }
