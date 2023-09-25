@@ -10,8 +10,25 @@ namespace OOPSConcepts
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to OOPS Concept.");
-            Console.ReadKey();
+            bool isRunning = true;
+            while (isRunning)
+            {
+                Console.WriteLine("Which Program You want to run : ");
+                Console.WriteLine("1. Object-Class-Concepts.");
+                Console.WriteLine("2. Exit");
+                string choice = Console.ReadLine();
+                
+                switch (choice)
+                {
+                    case "1":
+                        ObjectClassConcepts objectClassConcepts = new ObjectClassConcepts("HelloWorld Class", "HelloWorld Object");
+                        objectClassConcepts.DisplayDetails();
+                        break;
+                    case "2":
+                        isRunning = false;
+                        break;
+                }
+            }
         }
     }
 }
