@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractionConcepts.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="EncapsulationConcepts.cs" />
     <Compile Include="ObjectClassConcepts.cs" />
